@@ -1,0 +1,5 @@
+rootProject.name = 'fc_codeflix_java'
+include 'domain'
+include 'application'
+include 'infrastructure'
+
