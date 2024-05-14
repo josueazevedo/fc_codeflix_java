@@ -6,7 +6,7 @@ import org.jmal.domain.validation.ValidationHandler;
 import java.time.Instant;
 import java.util.UUID;
 
-public class Category extends AggregateRoot<CategoryID> {
+public class Category extends AggregateRoot<CategoryID> implements Cloneable {
     private String name;
     private String description;
     private boolean active;
@@ -36,31 +36,41 @@ public class Category extends AggregateRoot<CategoryID> {
         final var id = CategoryID.unique();
         final var now = Instant.now();
         final var deletedAt = isActive ? null : now;
+        return new Category(id, aName, aDescription, isActive, now, now, deletedAt);
+    }
+
+    public static Category with(final Category aCategory) {
         return new Category(
-                id,
-                aName,
-                aDescription,
-                isActive,
-                now,
-                now,
-                deletedAt
+                aCategory.getId(),
+                aCategory.name,
+                aCategory.description,
+                aCategory.isActive(),
+                aCategory.createdAt,
+                aCategory.updatedAt,
+                aCategory.deletedAt
         );
     }
 
-    public void deactivate() {
-        final var now = Instant.now();
+    @Override
+    public void validate(final ValidationHandler handler) {
+        new CategoryValidator(this, handler).validate();
+    }
+
+    public Category activate() {
+        this.deletedAt = null;
+        this.active = true;
+        this.updatedAt = Instant.now();
+        return this;
+    }
+
+    public Category deactivate() {
         if (getDeletedAt() == null) {
-            this.deletedAt = now;
+            this.deletedAt = Instant.now();
         }
 
         this.active = false;
-        this.updatedAt = now;
-    }
-
-    public void activate() {
-        this.active = true;
         this.updatedAt = Instant.now();
-        this.deletedAt = null;
+        return this;
     }
 
     public Category update(
@@ -79,9 +89,8 @@ public class Category extends AggregateRoot<CategoryID> {
         return this;
     }
 
-    @Override
-    public void validate(ValidationHandler handler) {
-        new CategoryValidator(this, handler).validate();
+    public CategoryID getId() {
+        return id;
     }
 
     public String getName() {
@@ -108,4 +117,12 @@ public class Category extends AggregateRoot<CategoryID> {
         return deletedAt;
     }
 
+    @Override
+    public Category clone() {
+        try {
+            return (Category) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }

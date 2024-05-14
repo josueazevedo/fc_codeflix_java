@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085819bc-ecb6-4c52-99e1-2c44b2b8138d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/create/CreateCategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/create/CreateCategoryOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/create/CreateCategoryUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/create/DefaultCreateCategoryUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/jmal/application/category/category/create/CreateCategoryUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/validation/handler/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/update/DefaultUpdateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/update/UpdateCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/update/UpdateCategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/update/UpdateCategoryUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/validation/ValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/validation/ValidationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/org/jmal/domain/category/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/org/jmal/domain/category/create/CreateCategoryUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/Category.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,56 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/domain">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fc_codeflix_java" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fc_codeflix_java" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fc_codeflix_java" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fc_codeflix_java" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fc_codeflix_java" type="f1a62948:ProjectNode" />
+                <item name="domain" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fc_codeflix_java" type="f1a62948:ProjectNode" />
+                <item name="domain" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,6 +102,9 @@
     "Gradle.CategoryTest.givenAValidDeactivateCategory_whenCallActivate_thenReturnCategoryActivated.executor": "Run",
     "Gradle.CategoryTest.givenAValidParams_whenCallNewCategory_thenInstantiateACategory.executor": "Run",
     "Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest (1).executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.executor": "Run",
+    "Gradle.fc_codeflix_java [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
@@ -73,7 +121,7 @@
       <recent name="org.jmal.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CreateCategoryUseCaseTest">
+  <component name="RunManager" selected="Gradle.fc_codeflix_java [test]">
     <configuration name="CategoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -88,30 +136,6 @@
             <option value=":domain:test" />
             <option value="--tests" />
             <option value="&quot;org.jmal.domain.category.CategoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":domain:test" />
-            <option value="--tests" />
-            <option value="&quot;org.jmal.domain.category.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,7 +170,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CreateCategoryUseCaseTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,9 +181,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":domain:test" />
+            <option value=":application:test" />
             <option value="--tests" />
-            <option value="&quot;org.jmal.domain.category.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError&quot;" />
+            <option value="&quot;org.jmal.application.category.category.create.CreateCategoryUseCaseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,6 +218,28 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="fc_codeflix_java [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -205,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CreateCategoryUseCaseTest" />
+        <item itemvalue="Gradle.fc_codeflix_java [test]" />
         <item itemvalue="Gradle.CategoryTest" />
+        <item itemvalue="Gradle.CreateCategoryUseCaseTest (1)" />
+        <item itemvalue="Gradle.CreateCategoryUseCaseTest" />
         <item itemvalue="Gradle.CategoryTest.givenAValidDeactivateCategory_whenCallActivate_thenReturnCategoryActivated" />
-        <item itemvalue="Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated" />
-        <item itemvalue="Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError" />
       </list>
     </recent_temporary>
   </component>
