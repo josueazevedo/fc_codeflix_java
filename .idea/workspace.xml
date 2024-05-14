@@ -5,33 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085819bc-ecb6-4c52-99e1-2c44b2b8138d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/AggregateRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/Identifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/ValueObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/CategoryID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/CategoryValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/exceptions/DomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/exceptions/NoStacktraceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/validation/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/validation/ValidationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/validation/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/validation/handler/ThrowsValidationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/CategoryGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/pagination/Pagination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/org/jmal/domain/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/org/jmal/domain/category/CategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/jmal/domain/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/org/jmal/domain/category/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/org/jmal/domain/category/CategoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +34,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2gPjIK9BYJTPMbeoeXOWbKXesIV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -68,6 +47,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.CategoryTest.executor": "Run",
+    "Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated.executor": "Debug",
+    "Gradle.CategoryTest.givenAValidDeactivateCategory_whenCallActivate_thenReturnCategoryActivated.executor": "Run",
     "Gradle.CategoryTest.givenAValidParams_whenCallNewCategory_thenInstantiateACategory.executor": "Run",
     "Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -86,7 +68,79 @@
       <recent name="org.jmal.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError">
+  <component name="RunManager" selected="Gradle.CategoryTest">
+    <configuration name="CategoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":domain:test" />
+            <option value="--tests" />
+            <option value="&quot;org.jmal.domain.category.CategoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":domain:test" />
+            <option value="--tests" />
+            <option value="&quot;org.jmal.domain.category.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CategoryTest.givenAValidDeactivateCategory_whenCallActivate_thenReturnCategoryActivated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":domain:test" />
+            <option value="--tests" />
+            <option value="&quot;org.jmal.domain.category.CategoryTest.givenAValidDeactivateCategory_whenCallActivate_thenReturnCategoryActivated&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="CategoryTest.givenAValidParams_whenCallNewCategory_thenInstantiateACategory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -135,8 +189,20 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CategoryTest" />
+        <item itemvalue="Gradle.CategoryTest.givenAValidDeactivateCategory_whenCallActivate_thenReturnCategoryActivated" />
+        <item itemvalue="Gradle.CategoryTest.givenAValidActiveCategory_whenCallDeactivate_thenReturnCategoryInactivated" />
         <item itemvalue="Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError" />
         <item itemvalue="Gradle.CategoryTest.givenAValidParams_whenCallNewCategory_thenInstantiateACategory" />
       </list>
