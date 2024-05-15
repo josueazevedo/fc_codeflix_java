@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085819bc-ecb6-4c52-99e1-2c44b2b8138d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/delete/DefaultDeleteCategoryUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/delete/DeleteCategoryUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/jmal/application/category/category/delete/DeleteCategoryUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/retrivie/get/CategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/retrivie/get/DefaultGetCategoryByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/jmal/application/category/retrivie/get/GetCategoryByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/jmal/application/category/category/retrivie/get/GetCategoryByIdUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +103,7 @@
     "Gradle.CategoryTest.givenAnInvalidNullName_whenCallNewCategoryAndValidate_thenShouldReceiveError.executor": "Run",
     "Gradle.CreateCategoryUseCaseTest (1).executor": "Run",
     "Gradle.CreateCategoryUseCaseTest.executor": "Run",
+    "Gradle.DeleteCategoryUseCaseTest.executor": "Run",
     "Gradle.DeleteCategoryUseCaseTest.givenAValidId_whenCallsDeleteCategory_shouldBeOK.executor": "Run",
     "Gradle.UpdateCategoryUseCaseTest.givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId.executor": "Run",
     "Gradle.fc_codeflix_java [test].executor": "Run",
@@ -121,7 +123,7 @@
       <recent name="org.jmal.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DeleteCategoryUseCaseTest.givenAValidId_whenCallsDeleteCategory_shouldBeOK">
+  <component name="RunManager" selected="Gradle.DeleteCategoryUseCaseTest">
     <configuration name="CategoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -146,7 +148,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CreateCategoryUseCaseTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteCategoryUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -159,7 +161,7 @@
           <list>
             <option value=":application:test" />
             <option value="--tests" />
-            <option value="&quot;org.jmal.application.category.category.create.CreateCategoryUseCaseTest&quot;" />
+            <option value="&quot;org.jmal.application.category.category.delete.DeleteCategoryUseCaseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -250,11 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DeleteCategoryUseCaseTest" />
         <item itemvalue="Gradle.DeleteCategoryUseCaseTest.givenAValidId_whenCallsDeleteCategory_shouldBeOK" />
         <item itemvalue="Gradle.fc_codeflix_java [test]" />
         <item itemvalue="Gradle.UpdateCategoryUseCaseTest.givenAValidCommand_whenCallsUpdateCategory_shouldReturnCategoryId" />
         <item itemvalue="Gradle.CategoryTest" />
-        <item itemvalue="Gradle.CreateCategoryUseCaseTest (1)" />
       </list>
     </recent_temporary>
   </component>
